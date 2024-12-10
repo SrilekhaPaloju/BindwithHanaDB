@@ -1,0 +1,71 @@
+<mvc:View
+    controllerName="com.app.fioriapp.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+>
+    <Shell id="shell">
+        <App id="app1">
+            <pages>
+                <Page
+                    id="page2345678"
+                    title="Video Call Integration in SAP UI5"
+                >
+                    <content>
+                        <core:HTML
+                            id="_IDGenHTML"
+                            class="sapUiLargeMargin"
+                            content='&lt;div class=&quot;container&quot;&gt; &lt;div class=&quot;participant&quot; id=&quot;participant&quot;&gt;&lt;/div&gt; &lt;div class=&quot;fs&quot; id=&quot;fs&quot;&gt;&lt;/div&gt; &lt;/div&gt;'
+                        />
+                    </content>
+                    <footer>
+                        <OverflowToolbar id="_IDGenOverflowToolbar">
+                            <Button
+                                id="idRemaining"
+                                type="Emphasized"
+                            />
+                            <ToolbarSpacer id="_IDGenToolbarSpacer3" />
+                            <Button
+                                id="_IDGenButton"
+                                icon="sap-icon://popup-window"
+                                class="sapUiTinyMarginBeginEnd"
+                                text="Share Screen"
+                                press="onShareScreen"
+                            />
+                            <Button
+                                id="idMute"
+                                icon="sap-icon://sound-off"
+                                class="sapUiTinyMarginEnd"
+                                text="Mute"
+                                press="onPressMute"
+                            />
+                            <Button
+                                id="idUnmute"
+                                visible="false"
+                                class="sapUiTinyMarginEnd"
+                                icon="sap-icon://sound-loud"
+                                text="Unmute"
+                                press="onPressUnmute"
+                            />
+                            <Button
+                                id="_IDGenButton3"
+                                type="Reject"
+                                text="Close Call"
+                                press="closeCall"
+                            >
+                                <layoutData>
+                                    <OverflowToolbarLayoutData
+                                        id="_IDGenOverflowToolbarLayoutData"
+                                        priority="NeverOverflow"
+                                    />
+                                </layoutData>
+                            </Button>
+                        </OverflowToolbar>
+                    </footer>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

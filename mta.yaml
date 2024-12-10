@@ -61,9 +61,24 @@ modules:
             - comappfiorielement.zip
           name: comappfiorielement
           target-path: resources/
+        - artifacts:
+            - comappfioriapp.zip
+          name: comappfioriapp
+          target-path: resources/
   - name: comappfiorielement
     type: html5
     path: app/fiorielement
+    build-parameters:
+      build-result: dist
+      builder: custom
+      commands:
+        - npm install
+        - npm run build:cf
+      supported-platforms:
+        []
+  - name: comappfioriapp
+    type: html5
+    path: app/fioriapp
     build-parameters:
       build-result: dist
       builder: custom

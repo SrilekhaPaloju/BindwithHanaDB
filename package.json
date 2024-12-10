@@ -25,18 +25,18 @@
     "build": "rimraf resources mta_archives && mbt build --mtar archive",
     "deploy": "cf deploy mta_archives/archive.mtar --retries 1"
   },
-  "cds": {
-    "sql": {
-      "native_hana_associations": false
-    },
-    "requires": {
-      "[production]": {
-        "db": "hana",
-        "auth": "xsuaa"
-      }
-    }
-  },
   "sapux": [
     "app/fiorielement"
-  ]
+  ],
+  "cds": {
+    "requires": {
+      "[production]": {
+        "auth": "xsuaa",
+        "db": "hana"
+      }
+    },
+    "sql": {
+      "native_hana_associations": false
+    }
+  }
 }

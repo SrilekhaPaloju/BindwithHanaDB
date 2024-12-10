@@ -1,0 +1,53 @@
+/* Enter your custom styles here */
+.EmphasizedText {
+    font-weight: bold;
+    -webkit-text-fill-color: #085caf;
+  }
+  .whitebg {
+    background-color: white !important;
+  }
+  .container {
+    display: flex;
+  }
+  .participant {
+    width: 20%;
+    height: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+  .zoomOut {
+    width: 80%;
+    height: 200px;
+    position: relative;
+  }
+  .fs {
+    width: 80%;
+    display: flex;
+    align-items: center;
+  }
+  .zoomButton {
+    position: absolute;
+    z-index: 100;
+    top: 5px;
+    right: 5px;
+    border-color: #fff;
+    background: #fff;
+    color: black;
+  }
+  .zoomButton:before {
+    content: "📌 ";
+  }
+  .zoomIn {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    right: 10px;
+  }
+  html.sap-desktop .sapMShellAppWidthLimited .sapMShellCentralBox {
+    width: 100% !important;
+    margin-left: 5px !important;
+    left: 0 !important;
+  }
